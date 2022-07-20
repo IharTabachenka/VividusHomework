@@ -1,2 +1,9 @@
-{check
+{
+    "FLUXUI-99999" : {
+        "type": "Internal",
+        "assertionPattern": ".+Accessibility Id: '(Account and profiles|Close. Button|Login. Button|You need to login to access this section. Please login with your My Ziggo account details.|Mediaboxes|Parental Control|Favourite channels|SAVE. Button|App preferences|Manage viewing data|Accessibility|Frequently Asked Questions|Diagnostics|Privacy|Terms & Conditions|Konto i profile|Moje kanały TV|Ustawienia preferencji|Moje Dekodery|Kontrola rodzicielska|Dostępność|Moje zgody|Najczęstsze pytania|Diagnostyka|Polityka prywatności|Regulamin UPC TV Go|My TV channels|Sunrise UPC TV Box|Manage usage data|TV 360 boxes|Parental Controls|Häufig gestellte Fragen|Datenschutz|Nutzungsrichtlinien|Account und Profile|Meine TV Sender|App Einstellungen|Magenta TV Boxen|Kindersicherung|Barrierefreiheit|My Channels|Parental controls|Ta sekcja jest tylko dla zalogowanych. Prosimy się zalogować ze swoimi danymi logowania.|Um diesen Bereich nutzen zu können, müssen Sie sich anmelden. Bitte loggen Sie sich hier mit Ihrem Mein Magenta Account ein.)'.+",
+        "storyPattern": "(Login via skipping|Login verification|Assets and lists validation|Profile creation and configuration|Watch TV|Edit profile|UI skeleton verification)",
+        "stepPattern": "(When I tap on element located|Then number of elements found by).+",
+        "description": "Settings menu is not discoverable for the appium"
+    }
 }

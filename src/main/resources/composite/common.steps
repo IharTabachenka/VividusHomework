@@ -1,0 +1,26 @@
+Composite: When I perform baseline `$name` check
+Priority: 1
+When I ${visual-action} baseline with `${env}/${brand}/${locale}/${platform}/<name>`
+
+
+Composite: When I do for `$platform`:$steps
+When the condition `#{eval(`${platform}` == `<platform>`)}` is true I do
+<steps>
+
+
+Composite: When element located by `$locator` exists I do:$steps
+When I save number of elements located `<locator>` to SCENARIO variable `elementsQuantity`
+When the condition `#{eval(${elementsQuantity}==1)}` is true I do
+<steps>
+
+
+Composite: When I save initial mediabox name
+When I save JSON element value from `${userParameters}` by JSON path `$.assignedDevices.[0].settings.deviceFriendlyName` to STORY variable `box_name`
+!-- Counting number of symbols to perform deletion
+When I initialize the STORY variable `initialBoxNameSize` with value `#{eval(size("${box_name}"))}`
+
+
+Composite: When number of elements located `$locator` is $rule `$expectedNumber` I do:$steps
+When I save number of elements located `<locator>` to SCENARIO variable `elements`
+When the condition `#{eval(${elements} <rule> <condition>)}` is true I do
+<steps>
